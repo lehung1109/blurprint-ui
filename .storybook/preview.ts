@@ -1,6 +1,8 @@
 import type { Preview } from '@storybook/nextjs-vite';
 import "../app/globals.css";
 
+import { themes } from 'storybook/theming';
+
 const preview: Preview = {
   parameters: {
     controls: {
@@ -17,6 +19,9 @@ const preview: Preview = {
       test: 'todo'
     },
     layout: 'fullscreen',
+    docs: {
+      theme: themes.dark,
+    },
   },
 };
 
