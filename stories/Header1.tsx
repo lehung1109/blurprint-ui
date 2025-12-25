@@ -24,6 +24,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import Image from "next/image";
 
 interface MenuItem {
   title: string;
@@ -41,6 +42,8 @@ interface Navbar1Props {
     alt: string;
     title: string;
     className?: string;
+    width?: number;
+    height?: number;
   };
   menu?: MenuItem[];
   auth?: {
@@ -57,10 +60,12 @@ interface Navbar1Props {
 
 const Header = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
+    url: "/",
+    src: "/logo.png",
     alt: "logo",
-    title: "Shadcnblocks.com",
+    title: "logo",
+    width: 223,
+    height: 69,
   },
   menu = [
     { title: "Home", url: "#" },
@@ -142,28 +147,25 @@ const Header = ({
 }: Navbar1Props) => {
   return (
     <section className={cn("py-4", className)}>
-      <div className="container">
+      <div className="container mx-auto">
         {/* Desktop Menu */}
         <nav className="hidden items-center justify-between lg:flex">
-          <div className="flex items-center gap-6">
-            {/* Logo */}
-            <a href={logo.url} className="flex items-center gap-2">
-              <img
-                src={logo.src}
-                className="max-h-8 dark:invert"
-                alt={logo.alt}
-              />
-              <span className="text-lg font-semibold tracking-tighter">
-                {logo.title}
-              </span>
-            </a>
-            <div className="flex items-center">
-              <NavigationMenu>
-                <NavigationMenuList>
-                  {menu.map((item) => renderMenuItem(item))}
-                </NavigationMenuList>
-              </NavigationMenu>
-            </div>
+          {/* Logo */}
+          <a href={logo.url} className="flex items-center gap-2">
+            <Image
+              src={logo.src}
+              className="dark:invert"
+              alt={logo.alt}
+              width={logo.width}
+              height={logo.height}
+            />
+          </a>
+          <div className="flex items-center">
+            <NavigationMenu>
+              <NavigationMenuList>
+                {menu.map((item) => renderMenuItem(item))}
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
           <div className="flex gap-2">
             <Button asChild variant="outline" size="sm">
@@ -180,10 +182,12 @@ const Header = ({
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href={logo.url} className="flex items-center gap-2">
-              <img
+              <Image
                 src={logo.src}
-                className="max-h-8 dark:invert"
+                className="dark:invert"
                 alt={logo.alt}
+                width={logo.width}
+                height={logo.height}
               />
             </a>
             <Sheet>
@@ -196,10 +200,12 @@ const Header = ({
                 <SheetHeader>
                   <SheetTitle>
                     <a href={logo.url} className="flex items-center gap-2">
-                      <img
+                      <Image
                         src={logo.src}
-                        className="max-h-8 dark:invert"
+                        className="dark:invert"
                         alt={logo.alt}
+                        width={logo.width}
+                        height={logo.height}
                       />
                     </a>
                   </SheetTitle>
