@@ -3,7 +3,19 @@ import { ArrowDown } from "lucide-react";
 
 const Hero4 = () => {
   return (
-    <section className="h-screen bg-background bg-[url('https://placehold.co/1920x1080?text=Image')] bg-cover bg-center bg-no-repeat pt-12 pb-24 w-full relative">
+    <section className="h-screen pt-12 pb-24 w-full relative overflow-hidden">
+      <picture>
+        <source
+          srcSet="https://placehold.co/1920x1080?text=Image"
+          media="(min-width: 1024px)"
+        />
+        <img
+          src="https://placehold.co/1920x1080?text=Image"
+          alt="Hero"
+          className="absolute inset-0 object-cover"
+        />
+      </picture>
+
       <div className="absolute inset-0 bg-linear-to-b from-background/0 to-background/80"></div>
 
       <div className="container absolute bottom-0 left-0 right-0 pb-24">
