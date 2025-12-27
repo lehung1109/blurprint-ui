@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 const Hero4 = () => {
   return (
@@ -12,7 +13,7 @@ const Hero4 = () => {
         <img
           src="https://placehold.co/1920x1080?text=Image"
           alt="Hero"
-          className="absolute inset-0 object-cover"
+          className="absolute inset-0 object-cover w-full h-full"
         />
       </picture>
 
@@ -30,9 +31,11 @@ const Hero4 = () => {
             </p>
           </div>
 
-          <Button variant="ghost" className="hidden md:flex">
-            <span className="text-2xl">Read More</span>
-            <ArrowDown size={24} className="size-6" />
+          <Button variant="ghost" className="hidden md:flex" asChild>
+            <a href="#main" className="hidden md:flex">
+              <span className="text-2xl">Read More</span>
+              <ArrowDown size={24} className="size-6" />
+            </a>
           </Button>
         </div>
       </div>
