@@ -4,6 +4,7 @@ import { Header1 } from "./Header1";
 import { Hero4 } from "./Hero4";
 import { Feature1 } from "./Feature1";
 import { Testimonial1 } from "./Testimonial1";
+import { Contact1 } from "./Contact1";
 
 const Page1 = () => {
   return (
@@ -14,6 +15,7 @@ const Page1 = () => {
         <Cta1 className="mt-24 lg:mt-32" href="#contact" />
         <Feature1 />
         <Testimonial1 />
+        <Contact1 />
       </main>
       <Footer1 />
     </>
