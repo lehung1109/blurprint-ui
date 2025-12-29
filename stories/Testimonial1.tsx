@@ -2,7 +2,7 @@ interface Testimonial1Props {
   className?: string;
 }
 
-const Testimonial1 = ({ className = "mt-24 lg:mt-32" }: Testimonial1Props) => {
+const Testimonial1 = ({ className }: Testimonial1Props) => {
   return (
     <section className={className}>
       <div className="container">
