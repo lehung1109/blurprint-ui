@@ -19,7 +19,7 @@ const Hero4 = () => {
 
       <div className="absolute inset-0 bg-linear-to-b from-background/0 to-background/80"></div>
 
-      <div className="container absolute bottom-0 left-0 right-0 pb-24">
+      <div className="container absolute bottom-0 left-0 right-0 pb-24 my-0">
         <div className="flex justify-between items-end gap-6">
           <div className="flex flex-col gap-8">
             <h1 className="text-6xl font-medium text-foreground md:text-[5.8rem]">

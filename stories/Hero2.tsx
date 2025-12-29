@@ -50,7 +50,7 @@ const Hero2 = ({
 }: Hero2Props) => {
   return (
     <section className={cn("py-32", className)}>
-      <div className="container">
+      <div className="container my-0">
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
             <h1 className="my-6 text-4xl font-bold text-pretty lg:text-6xl">

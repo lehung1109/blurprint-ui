@@ -93,8 +93,8 @@ const Footer1 = ({
   className,
 }: Footer1Props) => {
   return (
-    <section className={cn("pt-32 pb-5", className)}>
-      <div className="container">
+    <section className={className}>
+      <div className="container my-0">
         <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
           <div className="flex w-full flex-col justify-between gap-6 lg:items-start">
             {/* Logo */}

@@ -11,7 +11,7 @@ interface Feature1Props {
 }
 
 const Feature1 = ({
-  className = "mt-24 lg:mt-32",
+  className = "",
   items = [
     {
       year: "2024",
