@@ -8,7 +8,7 @@ interface Contact1Props {
   className?: string;
 }
 
-const Contact1 = ({ className = "mt-24 lg:mt-32" }: Contact1Props) => {
+const Contact1 = ({ className }: Contact1Props) => {
   return (
     <section className={className}>
       <div className="container">

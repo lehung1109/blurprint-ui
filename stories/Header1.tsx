@@ -147,7 +147,7 @@ const Header1 = ({
 }: Navbar1Props) => {
   return (
     <section className={cn("py-4", className)}>
-      <div className="container">
+      <div className="container my-0">
         {/* Desktop Menu */}
         <nav className="hidden items-center justify-between lg:flex">
           {/* Logo */}

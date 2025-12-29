@@ -24,7 +24,7 @@ const Hero1 = ({
 }: Hero1Props) => {
   return (
     <section className={cn("py-32", className)}>
-      <div className="container text-center">
+      <div className="container text-center my-0">
         <div className="mx-auto flex max-w-5xl flex-col gap-6">
           <h1 className="text-3xl font-semibold lg:text-6xl">{heading}</h1>
           <p className="text-balance text-muted-foreground lg:text-lg">

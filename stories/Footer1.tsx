@@ -1,5 +1,9 @@
 import React from "react";
-import { SiFacebook, SiInstagram, SiX } from "@icons-pack/react-simple-icons";
+import {
+  SiFacebook,
+  SiYoutube,
+  SiTiktok,
+} from "@icons-pack/react-simple-icons";
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
@@ -62,9 +66,9 @@ const defaultSections = [
 ];
 
 const defaultSocialLinks = [
-  { icon: <SiInstagram className="size-5" />, href: "#", label: "Instagram" },
+  { icon: <SiYoutube className="size-5" />, href: "#", label: "Youtube" },
   { icon: <SiFacebook className="size-5" />, href: "#", label: "Facebook" },
-  { icon: <SiX className="size-5" />, href: "#", label: "Twitter" },
+  { icon: <SiTiktok className="size-5" />, href: "#", label: "Tiktok" },
 ];
 
 const defaultLegalLinks = [
@@ -89,8 +93,8 @@ const Footer1 = ({
   className,
 }: Footer1Props) => {
   return (
-    <section className={cn("pt-32 pb-5", className)}>
-      <div className="container">
+    <section className={className}>
+      <div className="container my-0">
         <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
           <div className="flex w-full flex-col justify-between gap-6 lg:items-start">
             {/* Logo */}

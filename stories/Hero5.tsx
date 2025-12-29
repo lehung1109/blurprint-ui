@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
 
 const Hero5 = () => {
   return (
@@ -18,7 +17,7 @@ const Hero5 = () => {
 
       <div className="absolute inset-0 bg-linear-to-b from-background/0 to-background/80"></div>
 
-      <div className="container absolute top-1/2 -translate-y-1/2 left-0 right-0 px-12">
+      <div className="container absolute top-1/2 -translate-y-1/2 left-0 right-0 px-12 my-0">
         <div className="flex flex-col w-full gap-4 text-center max-w-3xl mx-auto">
           <p className="text-sm">BETA RELEASE AVAILABLE</p>
 
